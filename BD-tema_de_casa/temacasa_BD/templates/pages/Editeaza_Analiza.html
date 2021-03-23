@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<head>
+<title>Cabinet de analize MEDLIFE</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+
+<body>
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="Pacienti">Pacienti</a></li>
+  <li><a href="Analize">Analize</a></li>
+  <li><a href="Asistente">Asistente</a></li>
+  <li><a href="Medici_laborator">Medici laborator</a></li>
+</ul>
+  <div id="Analize" class="tabcontent">
+  <center>
+      <br>
+      <h1 id="h3"><b><i>Editeaza analiza</i></b></h1>
+      <br><br><br>
+      <form class="was-validated" method="POST" action="/editAnaliza">
+        <div class="row">
+          
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Tip</label>
+            <select name="tip" class="custom-select d-block my-3">
+                <option value="">Alege tipul analizei</option>
+                {% for tp in analiza %}
+                <option value={{tp}}>{{tp}}</option>
+                {% endfor %}
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Cabinet</label>
+            <select name="Cabinete_id_cabinet" class="custom-select d-block my-3">
+              <option value="">Alege cabinetul</option>
+                {% for com in Cabinete %}
+                <option value={{com}}>{{com}}</option>
+                {% endfor %}
+            </select>
+          </div>
+
+		  <div class="col-md-6 mb-3">
+        <label for="validationServer01">Data recoltare</label>
+        <input name="data_recoltare" type="date" class="form-control is-valid" id="validationServer01" value="{{data_recoltare}}" required>
+      </div>
+
+		  <div class="col-md-6 mb-3">
+        <label for="validationServer01">Data rezultat</label>
+        <input name="data_rezultat" type="date" class="form-control is-valid" id="validationServer01" value="{{data_rezultat}}" required>
+      </div>
+
+		  <div class="col-md-6 mb-3">
+        <label for="validationServer01">Medic</label>
+            <select name="Medici_lab_id_medic" class="custom-select d-block my-3">
+              <option value="">Alege medicul</option>
+                {% for md in Medici %}
+                <option value={{md}}>{{md}}</option>
+                {% endfor %}
+            </select>
+      </div>
+		 
+	 	 <div class="col-md-6 mb-3">
+      <label for="validationServer01">Asistenta</label>
+      <select name="Asistente_id_asistenta" class="custom-select d-block my-3">
+        <option value="">Alege asistenta</option>
+          {% for asis in Asistente %}
+          <option value={{asis}}>{{asis}}</option>
+          {% endfor %}
+      </select>
+      </div>
+		  
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Pret</label>
+        <input name="pret" type="number" class="form-control is-valid" id="validationServer02" value="{{pret}}" required>
+      </div>
+      </div>
+      <button class="btn btn-primary"  type="submit">Editeaza Analiza</button>
+      </form>
+
+  </center>
+
+</body>
+
+
+</html> 

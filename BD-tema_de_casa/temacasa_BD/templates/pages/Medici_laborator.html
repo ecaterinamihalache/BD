@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cabinet de analize MEDLIFE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+
+<body>
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="Pacienti">Pacienti</a></li>
+  <li><a href="Analize">Analize</a></li>
+  <li><a href="Asistente">Asistente</a></li>
+  <li><a href="Medici_laborator">Medici laborator</a></li>
+</ul>
+
+  <div id="Medici_laborator" class="tabcontent">
+	<center>
+		  <br>
+  		<h1 id="h3"><i><b>Medici laborator</b></i></h1>
+  		<br>
+  		<table style="width:70%">
+		<br><br>
+  			<tr>
+    			<th><i><b>index</b></i> </th>
+    			<th><i><b>nume_medic</b></i></th> 
+				<th><i><b>prenume_medic</b></i></th>
+				<th><i><b>id_contract</b></i></th>
+				<th><i><b>Sterge medic</b></i></th>
+			</tr>
+
+
+			{% for medic in Medici_laborator %}	
+  			<tr>
+    			<td>{{loop.index}}</td> 
+    			<td>{{medic["nume_m"]}}</td>
+				<td>{{medic["prenume_m"]}}</td>
+				<td>{{medic["Contracte_id_contract"]}}</td>
+				<td>
+                <form class="was-validated" method="POST" action="/delMedic">
+                  <button type="submit" value="Alerta" onclick="Alerta();" name="id_medic" value="{{medic['id_medic']}}" class="btn btn-primary">Sterge</button>
+                </form>
+          </td>
+			</tr>
+			{% endfor %}
+		  </table>
+      
+	  </center>
+
+	<div id="Medici_laborator" class="tabcontent">
+	<center>
+  		<h1 id="h3"><b><i>Adauga Medic</i></b></h1>
+      <br><br>
+      <form class="was-validated" method="POST" action="/addMedic">
+	   <div class="row">
+
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">Nume medic</label>
+            <input name="nume_m" type="text" class="form-control is-valid" id="validationServer01" placeholder="ex. Stroici" required>
+		  </div>
+		  
+		<div class="col-md-6 mb-3">
+            <label for="validationServer01">Prenume medic</label>
+            <input name="prenume_m" type="text" class="form-control is-valid" id="validationServer01" placeholder="ex. Dan" required>
+		  </div>
+
+		  <div class="col-md-6 mb-3">
+			<label for="validationServer01">Id contract</label>
+				<select name="Contracte_id_contract" class="custom-select d-block my-3">
+				  	<option value="">Id</option>
+					{% for com in Contracte %}
+					<option value={{com}}>{{com}}</option>
+					{% endfor %}
+				</select>
+		  </div>
+
+		 </div>  
+        <button class="btn btn-primary"  type="submit">Adauga Medic</button>
+      </form>
+<br>
+  </center>
+
+</body>
+
+</html> 

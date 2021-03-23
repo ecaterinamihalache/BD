@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<head>
+<title>Cabinet de analize MEDLIFE</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+
+<body>
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="Pacienti">Pacienti</a></li>
+  <li><a href="Analize">Analize</a></li>
+  <li><a href="Asistente">Asistente</a></li>
+  <li><a href="Medici_laborator">Medici laborator</a></li>
+</ul>
+  <div id="Pacienti" class="tabcontent">
+  <center>
+      <br>
+      <h1 id="h3"><b><i>Editeaza pacient</i></b></h1>
+      <br><br><br>
+      <form class="was-validated" method="POST" action="/editPacient">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Nume</label>
+            <input name="nume_p" type="text" class="form-control is-valid" id="validationServer01" value="{{nume_p}}" required>
+          </div>
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">Prenume</label>
+            <input name="prenume_p" type="text" class="form-control is-valid" id="validationServer01" value="{{prenume_p}}" required>
+          </div>
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">Data nasterii</label>
+            <input name="data_nasterii" type="date" class="form-control is-valid" id="validationServer01" value="{{data_nasterii}}" required>
+          </div>
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">CNP</label>
+            <input name="CNP" type="number" class="form-control is-valid" id="validationServer01" value="{{CNP}}" required>
+          </div>
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">Varsta</label>
+            <input name="varsta" type="number" class="form-control is-valid" id="validationServer01" value="{{varsta}}" required>
+          </div>
+		  <div class="col-md-6 mb-3">
+            <label for="validationServer01">Gen</label>
+            <input name="gen" type="text" class="form-control is-valid" id="validationServer01" value="{{gen}}" required>
+          </div>
+		  
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Adresa</label>
+            <input name="adresa" type="text" class="form-control is-valid" id="validationServer02" value="{{adresa}}" required>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Editeaza Pacient</button>
+      </form>
+
+  </center>
+
+</body>
+
+</html> 

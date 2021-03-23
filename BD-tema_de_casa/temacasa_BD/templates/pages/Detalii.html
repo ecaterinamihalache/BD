@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cabinet de analize MEDLIFE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+
+<body>
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="Pacienti">Pacienti</a></li>
+  <li><a href="Analize">Analize</a></li>
+  <li><a href="Asistente">Asistente</a></li>
+  <li><a href="Medici_laborator">Medici laborator</a></li>
+</ul>
+    <br><br>
+    <div>
+	<center>
+  	<h1><b><i>Detalii analize</i></b></h1>
+    </div>
+    <br><br>
+    <table style="width:70%">
+      			<tr>
+				<th><i><b>index</b></i></th>
+				<th><i><b>nume_analiza</b></i></th> 
+				<th><i><b>valoare_minima</b></i></th> 
+                <th><i><b>valoare_maxima</b></i></th> 
+                <th><i><b>id analiza</b></i></th>
+			
+			
+	{% for det in Detalii %}
+  				<tr>
+    			<td>{{loop.index}}</td>
+    			<td>{{det["nume_d"]}}</td> 
+    			<td>{{det["val_min"]}}</td>
+    			<td>{{det["val_max"]}}</td>
+    			<td>{{det["Analize_id_analiza"]}}</td>
+				</tr>
+	{% endfor %}
+  
+	</table>
+  </center>
+
+</body>
+
+</html> 

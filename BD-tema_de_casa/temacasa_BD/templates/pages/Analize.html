@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cabinet de analize MEDLIFE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+
+<body>
+
+<ul>
+  <li><a href="index">Home</a></li>
+  <li><a href="Pacienti">Pacienti</a></li>
+  <li><a href="Analize">Analize</a></li>
+  <li><a href="Asistente">Asistente</a></li>
+  <li><a href="Medici_laborator">Medici laborator</a></li>
+</ul>
+
+  <div class="tabcontent">
+	<center>
+	<br>
+  	<h1><i><b>Analize</b></i></h1>
+
+        <div class="btn-group">
+			<form class="was-validated" method="POST" action="/addAnaliza"></form>
+        <a href="Adauga_analiza"><button type="button" class="btn btn-primary" >Adauga analiza</button></a>
+        <br>
+        <form class="was-validated" method="POST" action="/editAnaliza"> </form>
+		<a href="Editeaza_Analiza"><button type="submit" name="id_analiza" class="btn btn-primary">Editeaza analiza</button></a>
+		<br>
+	<br>
+        </div>
+
+      <br><br>
+      <table style="width:70%">
+      <tr>
+			<th><i><b>index</b></i></th> 
+			<th><i><b>tip</b></i></th>  
+			<th><i><b>data_recoltare</b></i></th> 
+			<th><i><b>data_rezultat</b></i></th> 
+			<th><i><b>id_cabinet</b></i></th> 
+			<th><i><b>id_medic</b></i></th> 
+			<th><i><b>id_asistenta</b></i></th> 
+			<th><i><b>pret</b></i></th> 
+			<th><i><b>Sterge analiza</b></i></th>
+			<th><i><b>Detalii analiza</b></i></th>
+
+
+    {% for analiza in Analize %}			
+  			<tr>
+    		<td>{{loop.index}}</td>
+    		<td>{{analiza["tip"]}}</td> 
+    		<td>{{analiza["data_recoltare"]}}</td>
+			<td>{{analiza["data_rezultat"]}}</td>
+    		<td>{{analiza["Cabinete_id_cabinet"]}}</td> 
+    		<td>{{analiza["Medici_lab_id_medic"]}}</td>
+			<td>{{analiza["Asistente_id_asistenta"]}}</td>
+			<td>{{analiza["pret"]}}</td>
+	<td>
+		<form class="was-validated" method="POST" action="/delAnaliza">
+		<button type="submit"  name="id_analiza" value="{{analiza['id_analiza']}}" class="btn btn-primary">Sterge</button>
+		</form>
+	</td>
+
+	<td>
+		<form class="was-validated" method="POST" action="/detaliiAnaliza"></form>
+        <a href='Detalii/{{analiza["id_analiza"]}}'><button type="button" class="btn btn-primary" >Detalii analize</button></a>
+	</td>
+
+			</tr>
+	{% endfor %}
+ 
+	</table>
+      <br><br><br>
+  </center>
+
+</body>
+
+</html> 
