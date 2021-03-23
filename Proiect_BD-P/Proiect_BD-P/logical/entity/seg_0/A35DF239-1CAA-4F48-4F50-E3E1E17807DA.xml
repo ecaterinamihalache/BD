@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A35DF239-1CAA-4F48-4F50-E3E1E17807DA" name="Pacienti">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:50:39 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pacient" id="1097FF6E-A8F1-DC96-5E1D-98274F10B5CB">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:57:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_p" id="B5854A28-63FF-693B-8EB8-EBAB29D666B0">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:57:33 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume_p" id="904F02BC-CB3B-2EFE-FEF2-AA157225D3ED">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-14 20:00:30 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="02B54856-9A57-EE39-998F-4C58860A928F">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:58:34 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNP" id="A3CBB521-FE21-3703-97C0-8DB1248C9989">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:58:00 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>CNP_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(CNP)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="varsta" id="9AD34EB7-310C-9029-96E4-DBD9FB021759">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 16:51:57 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>v_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="varsta&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gen" id="69CE8171-C865-A3AD-ABE2-75F96BE6C7CC">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:04:10 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>gen_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description=""/>
+<valueDef value="M" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="B504A096-AA88-C68B-4D0E-7152042B1E89">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:12:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF329211-53F8-F0F8-0389-B0C572DEF148" name="CNP">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-22 09:31:10 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<newElementsIDs>A3CBB521-FE21-3703-97C0-8DB1248C9989</newElementsIDs>
+<usedAttributes>
+<attributeRef>A3CBB521-FE21-3703-97C0-8DB1248C9989</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FF631937-987E-835C-2972-932461C76F76" name="P PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-06 19:17:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>1097FF6E-A8F1-DC96-5E1D-98274F10B5CB</newElementsIDs>
+<usedAttributes>
+<attributeRef>1097FF6E-A8F1-DC96-5E1D-98274F10B5CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

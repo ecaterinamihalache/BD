@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B3F151B-BE02-39D3-EC5E-D12C74EC5BF9" name="Medici_lab">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>9F29E9DA-C3D1-E330-E861-770CC481E466</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_medic" id="070BF742-2B22-D7D7-7CE5-D64F6058845B">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>173C6DE3-E3B5-324E-8C63-8F6B288E4C52</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_m" id="5E9D4000-2E35-44BF-96FF-7F43FA1C4DAF">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>D853D501-61A6-DBC6-EF7B-727280688DCF</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume_m" id="034D6818-3912-9C0C-3276-F5915FAF506A">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>BF41F19B-A6E4-F4AF-44EC-4A92516FE834</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contracte_id_contract" id="4B4A0224-F8B1-7B06-E6C4-0EF2E810E067">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>AFA054A4-CBAF-3D39-4300-B9F9B2CBB85A</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F111EC49-DCC3-D210-C3A4-5158A39BD4F9" referredColumn="634A85B9-A023-84E5-528A-DE9CC11744FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2523AD89-687C-6E2A-BF39-A1A4D1E92671" name="Medici_lab_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>847C4B9F-24DE-2823-E906-23FB427A2A08</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="070BF742-2B22-D7D7-7CE5-D64F6058845B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8999DE22-5CC7-B8D8-58DE-74C1AE2522B5" name="Medici_lab__IDX">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>23B5A678-C939-38DB-0C72-9250F9AF82C8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4B4A0224-F8B1-7B06-E6C4-0EF2E810E067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93B4E182-F5F5-5E19-F0EA-69303FF5EAC4" name="Medici_lab_Contracte_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>23B5A678-C939-38DB-0C72-9250F9AF82C8</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B4A0224-F8B1-7B06-E6C4-0EF2E810E067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B48A638-9446-92F1-100F-FA0CD736D687" name="Analize">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>943CC4CD-99CA-0F29-1227-FF860847AB66</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_analiza" id="9771356F-CF01-C66B-0182-F7F17EEDE537">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>862CA1E9-9DDF-54D3-1FCF-0A833F079DF7</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip" id="155C01B0-9453-56A1-4516-7AA0A0102190">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>23A6DBEF-A99B-C567-3BB3-63483826FA6A</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>tip_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Anemie" description=""/>
+<valueDef value="Biochimie" description=""/>
+<valueDef value="Citologie" description=""/>
+<valueDef value="Coagulare" description=""/>
+<valueDef value="Electroforeza" description=""/>
+<valueDef value="Generale" description=""/>
+<valueDef value="Hematologie" description=""/>
+<valueDef value="Hepatice" description=""/>
+<valueDef value="Imunologie" description=""/>
+<valueDef value="Standard" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_recoltare" id="4A66E3C2-F5BB-6A26-6351-B2F1BA9C6466">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>ADE7F652-C109-D05F-F748-94E28E76C9D1</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_rezultat" id="7ED3C8D1-0563-9081-5275-92168B4A9F8C">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>71F0F5BE-F56B-B1C7-59D0-FCD20A88D141</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>data_rez_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_rezultat&gt;=data_recoltare"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cabinete_id_cabinet" id="E3F837A9-DEF5-F4D4-7E1F-EDAC05574908">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>180C511B-9312-75D5-6D96-477FC42553B3</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7032A01-7FC7-DCB3-2738-A138653B9DFB" referredColumn="1F09BD9C-05EB-DE0A-52E2-6309B80B7625"/>
+</associations>
+</Column>
+<Column name="Medici_lab_id_medic" id="D6F61003-639E-78EC-C310-25773AA64EE1">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>A4AE5503-DD72-AC1A-F1B3-F843B63851D2</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59D638F0-752A-11C3-2754-AF7E74203254" referredColumn="070BF742-2B22-D7D7-7CE5-D64F6058845B"/>
+</associations>
+</Column>
+<Column name="Asistente_id_asistenta" id="1BEF0928-CD4A-DB1D-D3F7-9BF5ACAECCED">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>4B6D783B-C84B-5C76-291E-A6D983E92897</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="733BFCF7-B562-9519-DC1F-6E367CC4841B" referredColumn="9BA214B1-441C-B26D-0DC9-D02258A36559"/>
+</associations>
+</Column>
+<Column name="pret" id="CB76F183-2508-CC61-8C0D-13445FCFA9D0">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>F3810891-0C4F-84CA-6902-87B04E6D1811</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>pret_FK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>B7032A01-7FC7-DCB3-2738-A138653B9DFB</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7516236-3EBA-26E0-956E-2FC737FBD807" name="Analize_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>4AC9CB96-936E-AF65-7A37-7F754AF7FD87</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9771356F-CF01-C66B-0182-F7F17EEDE537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2B483A3-BEBD-412E-07B4-DDC93DEA5D4A" name="Analize_Asistente_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>F9EB9239-2A67-CC4F-826C-B02B97899194</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BEF0928-CD4A-DB1D-D3F7-9BF5ACAECCED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BA58897-27AE-05EF-0F53-0CE1AA5D8797" name="Analize_Cabinete_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>FC376E12-8C58-B2AA-0B90-370CC0EEB9E3</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3F837A9-DEF5-F4D4-7E1F-EDAC05574908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A496599-BB20-AB2E-1A92-9A2F1E3BCDF7" name="Analize_Medici_lab_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>EC5FDB56-381C-DC1E-C889-4AF5A50809D4</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6F61003-639E-78EC-C310-25773AA64EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

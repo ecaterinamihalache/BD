@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="943CC4CD-99CA-0F29-1227-FF860847AB66" name="Analize">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:50:32 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_analiza" id="862CA1E9-9DDF-54D3-1FCF-0A833F079DF7">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:55:42 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip" id="23A6DBEF-A99B-C567-3BB3-63483826FA6A">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 16:38:29 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>tip_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Anemie" description=""/>
+<valueDef value="Biochimie" description=""/>
+<valueDef value="Citologie" description=""/>
+<valueDef value="Coagulare" description=""/>
+<valueDef value="Electroforeza" description=""/>
+<valueDef value="Generale" description=""/>
+<valueDef value="Hematologie" description=""/>
+<valueDef value="Hepatice" description=""/>
+<valueDef value="Imunologie" description=""/>
+<valueDef value="Standard" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_recoltare" id="ADE7F652-C109-D05F-F748-94E28E76C9D1">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:00:32 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_rezultat" id="71F0F5BE-F56B-B1C7-59D0-FCD20A88D141">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:00:46 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>data_rez_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_rezultat&gt;=data_recoltare"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cabinet" id="180C511B-9312-75D5-6D96-477FC42553B3">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:49:20 UTC</createdTime>
+<generatorID>FC376E12-8C58-B2AA-0B90-370CC0EEB9E3</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>0AC7908E-66DE-B060-834E-09BEF83CA100</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_medic" id="A4AE5503-DD72-AC1A-F1B3-F843B63851D2">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:50:36 UTC</createdTime>
+<generatorID>EC5FDB56-381C-DC1E-C889-4AF5A50809D4</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>173C6DE3-E3B5-324E-8C63-8F6B288E4C52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_asistenta" id="4B6D783B-C84B-5C76-291E-A6D983E92897">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:51:12 UTC</createdTime>
+<generatorID>F9EB9239-2A67-CC4F-826C-B02B97899194</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>3D10ABD5-7DA7-A8B4-347C-E48F6B641C5C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4AC9CB96-936E-AF65-7A37-7F754AF7FD87" name="Analize PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:56:00 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>862CA1E9-9DDF-54D3-1FCF-0A833F079DF7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

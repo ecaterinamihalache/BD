@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5AD9EFA3-7BF7-DE5B-A3C2-2D37A34CDBE1" name="Cabinete">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:37:36 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cabinet" id="0AC7908E-66DE-B060-834E-09BEF83CA100">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:37:51 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="1943359F-85E3-979F-FDED-43FD021F057D">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:40:21 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="7523F5F6-DFC7-4B0B-4A00-D495EC4B3CEF">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:49:32 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefon" id="106D91E9-DE07-A431-CFD8-19AF13BF5700">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:40:56 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>nr_telefon_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(             to_char(nr_telefon)         ) = 10                                               AND substr(         to_char(nr_telefon),         1,         1     ) = &apos;0&apos;                                               OR substr(         to_char(nr_telefon),         2,         1     ) = &apos;2&apos;                                               OR substr(         to_char(nr_telefon),         2,         1     ) = &apos;3&apos;                                               OR substr(         to_char(nr_telefon),         2,         1     ) = &apos;7&apos; );"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E77CCA6-F2E6-F7C9-F62B-C9C2821EC846" name="Cabinete PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:40:49 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0AC7908E-66DE-B060-834E-09BEF83CA100</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C14AEAA-882E-F9E3-BF50-384ABE686ECA" name="Asistente">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>2DB3FB37-2A04-D097-8AD8-DA7F22D853F4</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asistenta" id="9BA214B1-441C-B26D-0DC9-D02258A36559">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>3D10ABD5-7DA7-A8B4-347C-E48F6B641C5C</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_a" id="B0DB0DBA-4E81-6FA8-429C-BECA8D8B4BC5">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>D413B40A-E16A-4001-F2B9-10B71AAEB92C</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume_a" id="2132D2E8-33EC-8DE6-2239-2764DB838E96">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>90E1AEF7-56B6-0811-B7D3-0FF325975B95</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contracte_id_contract" id="0FBADE30-CFB7-D683-5260-526C563254C1">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>4638258D-5ED6-A786-869E-646F4C2F0BAC</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D9D0480-9077-8A0A-2440-50D52C08A243" referredColumn="634A85B9-A023-84E5-528A-DE9CC11744FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="819C2A19-0B14-7D19-F42A-6B28DB01981F" name="Asistente_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>38EF02DA-3DB7-3DFC-4645-DEDEE82A2714</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BA214B1-441C-B26D-0DC9-D02258A36559"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15A97FC1-D470-7B3F-1F73-5312E71F1B0B" name="Asistente__IDX">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>78C856F6-5AB2-2856-3CE6-A350C5518D58</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0FBADE30-CFB7-D683-5260-526C563254C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6075118-9FDD-28E6-5524-58C1806ECBEE" name="Asistente_Contracte_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>78C856F6-5AB2-2856-3CE6-A350C5518D58</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FBADE30-CFB7-D683-5260-526C563254C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

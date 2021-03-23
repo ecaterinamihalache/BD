@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="det_an_FK" directorySegmentName="seg_0" id="3B819D0B-D8D2-3197-FC05-B7EC05C07DD6">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:23:29 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>4AC9CB96-936E-AF65-7A37-7F754AF7FD87</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>este detinut</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>943CC4CD-99CA-0F29-1227-FF860847AB66</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>BAA4AA3E-6A1B-3F1C-170A-62B9418881FA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

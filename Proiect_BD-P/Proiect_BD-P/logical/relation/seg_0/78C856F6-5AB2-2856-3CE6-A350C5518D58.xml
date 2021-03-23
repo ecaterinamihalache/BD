@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cont_asis_FK" directorySegmentName="seg_0" id="78C856F6-5AB2-2856-3CE6-A350C5518D58">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:23:10 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>554580C8-09B4-2B09-C2A3-4FDD34741D74</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este semnat</nameOnSource>
+<nameOnTarget>semneaza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B268ED2-FB14-1625-D926-661D345612AC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2DB3FB37-2A04-D097-8AD8-DA7F22D853F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

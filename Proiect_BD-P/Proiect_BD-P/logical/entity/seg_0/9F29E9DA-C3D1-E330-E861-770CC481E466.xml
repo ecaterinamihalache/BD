@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F29E9DA-C3D1-E330-E861-770CC481E466" name="Medici_lab">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 16:06:15 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_medic" id="173C6DE3-E3B5-324E-8C63-8F6B288E4C52">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:06:33 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_m" id="D853D501-61A6-DBC6-EF7B-727280688DCF">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:09:28 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume_m" id="BF41F19B-A6E4-F4AF-44EC-4A92516FE834">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-14 19:59:15 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_contract" id="AFA054A4-CBAF-3D39-4300-B9F9B2CBB85A">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:22:30 UTC</createdTime>
+<generatorID>23B5A678-C939-38DB-0C72-9250F9AF82C8</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>0F1E9DDF-4EC6-525D-7C9E-13F9810978BC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="847C4B9F-24DE-2823-E906-23FB427A2A08" name="Medici PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:11:08 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>173C6DE3-E3B5-324E-8C63-8F6B288E4C52</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

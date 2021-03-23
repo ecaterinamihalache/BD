@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4E93E55-42F3-5EFC-E63D-C50D061876F1" name="Detalii">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>BAA4AA3E-6A1B-3F1C-170A-62B9418881FA</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalii" id="29A0011A-B09D-2539-D2F5-A09FADA0F2A5">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>9C81EA06-038F-49D6-A1DC-009BB7231C13</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_d" id="D8AF7E9A-E095-0D91-797E-FB43CC35C1E8">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>0A5E3745-218B-12C8-3A48-6D6E2BDA06A5</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>num_d_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<listOfValues>
+<valueDef value="ASLO" description=""/>
+<valueDef value="Albumine" description=""/>
+<valueDef value="Amilazuria" description=""/>
+<valueDef value="Calciu" description=""/>
+<valueDef value="Cortisol" description=""/>
+<valueDef value="Fibrinogen" description=""/>
+<valueDef value="Fier" description=""/>
+<valueDef value="GGT" description=""/>
+<valueDef value="Glicemie" description=""/>
+<valueDef value="Hematocit" description=""/>
+<valueDef value="Hemoglobina" description=""/>
+<valueDef value="Magneziu" description=""/>
+<valueDef value="PTH" description=""/>
+<valueDef value="Sideremia" description=""/>
+<valueDef value="Spermograma" description=""/>
+<valueDef value="TGO" description=""/>
+<valueDef value="TGP" description=""/>
+<valueDef value="Tireoglobulina" description=""/>
+<valueDef value="Trigliceride" description=""/>
+<valueDef value="VSH" description=""/>
+</listOfValues>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="val_min" id="488FEE48-BBD9-436D-0180-89062DDD7F72">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>863ECE58-909E-5D1B-E00E-0F95E0130EB1</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>min_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="val_min&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="val_max" id="5D64EC28-61D4-62C4-682A-60C2061065A9">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>2A0B94D2-0D12-F630-6C48-61E850583B8B</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>max_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="val_max&gt;val_min"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Analize_id_analiza" id="B3A27FE7-0EC4-B3FD-BC16-CB8ECD71EA3C">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>13D56020-F641-53FF-1C7B-2663CF906B21</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21B1B12C-C9F1-11CE-546C-3CF8963A0272" referredColumn="9771356F-CF01-C66B-0182-F7F17EEDE537"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45DF1911-0FC1-AB6A-FBAC-72E81F43CD6F" name="Detalii_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>49E15C86-60CD-86C8-D6E0-8FC3BDF39385</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29A0011A-B09D-2539-D2F5-A09FADA0F2A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E37DC21D-C0DA-9986-B9EA-7BEA5135EE2F" name="Detalii__IDX">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3B819D0B-D8D2-3197-FC05-B7EC05C07DD6</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B3A27FE7-0EC4-B3FD-BC16-CB8ECD71EA3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="991BFA99-A93C-1AC1-9C3A-D7BB8C6A923C" name="Detalii_Analize_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>3B819D0B-D8D2-3197-FC05-B7EC05C07DD6</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3A27FE7-0EC4-B3FD-BC16-CB8ECD71EA3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

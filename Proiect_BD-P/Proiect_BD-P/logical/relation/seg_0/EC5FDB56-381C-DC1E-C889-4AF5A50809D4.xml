@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Medici_Analize_FK" directorySegmentName="seg_0" id="EC5FDB56-381C-DC1E-C889-4AF5A50809D4">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:50:36 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>847C4B9F-24DE-2823-E906-23FB427A2A08</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>fac</nameOnSource>
+<nameOnTarget>este facuta</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9F29E9DA-C3D1-E330-E861-770CC481E466</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>943CC4CD-99CA-0F29-1227-FF860847AB66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

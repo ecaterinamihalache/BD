@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cabinete_Analize_FK" directorySegmentName="seg_0" id="FC376E12-8C58-B2AA-0B90-370CC0EEB9E3">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:49:20 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>8E77CCA6-F2E6-F7C9-F62B-C9C2821EC846</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>realizeaza</nameOnSource>
+<nameOnTarget>este realizata</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5AD9EFA3-7BF7-DE5B-A3C2-2D37A34CDBE1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>943CC4CD-99CA-0F29-1227-FF860847AB66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="pret" id="F3810891-0C4F-84CA-6902-87B04E6D1811">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:52:35 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>pret_FK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

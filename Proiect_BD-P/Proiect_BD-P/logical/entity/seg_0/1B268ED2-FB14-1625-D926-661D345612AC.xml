@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B268ED2-FB14-1625-D926-661D345612AC" name="Contracte">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 10:50:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contract" id="0F1E9DDF-4EC6-525D-7C9E-13F9810978BC">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:02:48 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_start" id="C9CEE914-B687-9566-6539-60FB30D9A945">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:03:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_end" id="28FE907D-2AF5-25FF-E689-FEA2C98A6434">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:03:35 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>data_end_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_end&gt;data_start"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_luni" id="FED6A1A2-13BA-F056-6D3E-D7CB623FF4E5">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:04:12 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>c_nr_luni_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_luni&gt;=12 and MOD(nr_luni, 6)=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cabinet" id="E10FA3E7-51F8-5018-957F-811DB0BAFDE8">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:39:31 UTC</createdTime>
+<generatorID>7672BDB3-1030-7DC3-FA42-E18E833914C0</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>0AC7908E-66DE-B060-834E-09BEF83CA100</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="554580C8-09B4-2B09-C2A3-4FDD34741D74" name="Contracte PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:03:07 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F1E9DDF-4EC6-525D-7C9E-13F9810978BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

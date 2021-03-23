@@ -1,0 +1,4 @@
+-sa sterg rezultat_an din detalii
+-sa leg analize de asistente si relatia sa fie unu la multi
+-si la fel intre analize si medici_lab
+-pret din analize sa-l pun pe relatia cu cabinete si sa fac relatia unu la multi

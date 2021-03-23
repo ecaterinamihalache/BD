@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cont_med_lab_FK" directorySegmentName="seg_0" id="23B5A678-C939-38DB-0C72-9250F9AF82C8">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-28 17:22:30 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>554580C8-09B4-2B09-C2A3-4FDD34741D74</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este semnat</nameOnSource>
+<nameOnTarget>semneaza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B268ED2-FB14-1625-D926-661D345612AC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9F29E9DA-C3D1-E330-E861-770CC481E466</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

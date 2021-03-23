@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EEA155A-E226-649D-75E3-2DE037004425" name="Pacienti_Detalii">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Detalii_id_detalii" id="FCAFF2CD-CC20-2A5A-8969-090A87DFB08F">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63361703-730C-9914-90C6-34F28DC5CE0B" referredColumn="29A0011A-B09D-2539-D2F5-A09FADA0F2A5"/>
+</associations>
+</Column>
+<Column name="Pacienti_id_pacient" id="2409E3C4-5ABF-EAC1-02B7-FA29893B22D8">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8B43A77-70A0-2B7D-D775-67B20FAF1F20" referredColumn="370F2F50-0FA4-1890-FC0A-BF3B3776C074"/>
+</associations>
+</Column>
+<Column name="rezultat" id="A8D6CF2C-3685-89DC-EDFC-4AC773E82F78">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>DB202CA9-865D-268D-AC2F-46238DCCE487</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>rez_FK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="rezultat&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C6B79D0-C36D-FB28-B4BA-D7FBB3CAAFE3" name="pac_det_FK_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCAFF2CD-CC20-2A5A-8969-090A87DFB08F"/>
+<colUsage columnID="2409E3C4-5ABF-EAC1-02B7-FA29893B22D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87211152-C211-1D37-313D-C4E6D8C44118" name="pac_det_FK_Detalii_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>28298159-D4F5-B1B1-2729-5B3DFAB15873</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCAFF2CD-CC20-2A5A-8969-090A87DFB08F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="182062EB-A57F-70E5-0860-E7088E753149" name="pac_det_FK_Pacienti_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>28298159-D4F5-B1B1-2729-5B3DFAB15873</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2409E3C4-5ABF-EAC1-02B7-FA29893B22D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

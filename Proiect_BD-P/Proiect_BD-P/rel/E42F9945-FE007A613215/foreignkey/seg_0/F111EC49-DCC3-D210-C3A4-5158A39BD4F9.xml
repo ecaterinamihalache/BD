@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F111EC49-DCC3-D210-C3A4-5158A39BD4F9" containerWithKeyObject="6B3F151B-BE02-39D3-EC5E-D12C74EC5BF9" localFKIndex="93B4E182-F5F5-5E19-F0EA-69303FF5EAC4" name="Medici_lab_Contracte_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>23B5A678-C939-38DB-0C72-9250F9AF82C8</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<referredTableLongName>Contracte</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A8D6B180-D2EB-12FA-7163-85073B02413D</referredTableID>
+<keyObject>4E87DBA5-B81B-6963-70E2-21F151BF115A</keyObject>
+<referredKeyID>4E87DBA5-B81B-6963-70E2-21F151BF115A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contract</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

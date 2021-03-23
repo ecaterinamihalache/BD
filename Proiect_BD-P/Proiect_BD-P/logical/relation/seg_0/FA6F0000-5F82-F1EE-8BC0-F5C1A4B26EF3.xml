@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pacienti_Analize" directorySegmentName="seg_0" id="FA6F0000-5F82-F1EE-8BC0-F5C1A4B26EF3">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:56:59 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>face</nameOnSource>
+<nameOnTarget>este facuta</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A35DF239-1CAA-4F48-4F50-E3E1E17807DA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>943CC4CD-99CA-0F29-1227-FF860847AB66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BAA4AA3E-6A1B-3F1C-170A-62B9418881FA" name="Detalii">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:21:10 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_detalii" id="9C81EA06-038F-49D6-A1DC-009BB7231C13">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:21:19 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_d" id="0A5E3745-218B-12C8-3A48-6D6E2BDA06A5">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:21:36 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>num_d_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<listOfValues>
+<valueDef value="ASLO" description=""/>
+<valueDef value="Albumine" description=""/>
+<valueDef value="Amilazuria" description=""/>
+<valueDef value="Calciu" description=""/>
+<valueDef value="Cortisol" description=""/>
+<valueDef value="Fibrinogen" description=""/>
+<valueDef value="Fier" description=""/>
+<valueDef value="GGT" description=""/>
+<valueDef value="Glicemie" description=""/>
+<valueDef value="Hematocit" description=""/>
+<valueDef value="Hemoglobina" description=""/>
+<valueDef value="Magneziu" description=""/>
+<valueDef value="PTH" description=""/>
+<valueDef value="Sideremia" description=""/>
+<valueDef value="Spermograma" description=""/>
+<valueDef value="TGO" description=""/>
+<valueDef value="TGP" description=""/>
+<valueDef value="Tireoglobulina" description=""/>
+<valueDef value="Trigliceride" description=""/>
+<valueDef value="VSH" description=""/>
+</listOfValues>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="val_min" id="863ECE58-909E-5D1B-E00E-0F95E0130EB1">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:22:00 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>min_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="val_min&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="val_max" id="2A0B94D2-0D12-F630-6C48-61E850583B8B">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:22:21 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>max_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="val_max&gt;val_min"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_analiza" id="13D56020-F641-53FF-1C7B-2663CF906B21">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:23:29 UTC</createdTime>
+<generatorID>3B819D0B-D8D2-3197-FC05-B7EC05C07DD6</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<referedAttribute>862CA1E9-9DDF-54D3-1FCF-0A833F079DF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="49E15C86-60CD-86C8-D6E0-8FC3BDF39385" name="Det PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:21:55 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9C81EA06-038F-49D6-A1DC-009BB7231C13</newElementsIDs>
+<usedAttributes>
+<attributeRef>9C81EA06-038F-49D6-A1DC-009BB7231C13</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

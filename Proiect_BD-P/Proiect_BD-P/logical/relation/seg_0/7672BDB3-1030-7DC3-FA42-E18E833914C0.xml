@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cab_cont_FK" directorySegmentName="seg_0" id="7672BDB3-1030-7DC3-FA42-E18E833914C0">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-11-21 11:39:31 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<sourcePk>8E77CCA6-F2E6-F7C9-F62B-C9C2821EC846</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>a incheiat</nameOnSource>
+<nameOnTarget>e incheiat cu</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5AD9EFA3-7BF7-DE5B-A3C2-2D37A34CDBE1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B268ED2-FB14-1625-D926-661D345612AC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

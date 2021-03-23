@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="704057C8-CC46-8707-29E1-3AE11C203B79" name="Pacienti_Analize">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pacienti_id_pacient" id="73E333AC-D3C7-945A-4804-C4FCC716B3A0">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38C1D077-89F4-03DA-0A9D-A265951E5D7F" referredColumn="370F2F50-0FA4-1890-FC0A-BF3B3776C074"/>
+</associations>
+</Column>
+<Column name="Analize_id_analiza" id="5FB2B420-6A2E-8B0A-00A8-31612CE3D104">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C022CC0-E645-CD41-7D5F-8B8A02379BCD" referredColumn="9771356F-CF01-C66B-0182-F7F17EEDE537"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8CB8DE3-D0B5-4CF3-D2BB-AC4961A441DC" name="pac_a_FK_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73E333AC-D3C7-945A-4804-C4FCC716B3A0"/>
+<colUsage columnID="5FB2B420-6A2E-8B0A-00A8-31612CE3D104"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F43CD73C-4AFB-4B97-F7CE-31CF2245F2B6" name="pac_a_FK_Pacienti_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>FA6F0000-5F82-F1EE-8BC0-F5C1A4B26EF3</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73E333AC-D3C7-945A-4804-C4FCC716B3A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC62307E-10F7-6692-6D37-53E48C5F5486" name="pac_a_FK_Analize_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>FA6F0000-5F82-F1EE-8BC0-F5C1A4B26EF3</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FB2B420-6A2E-8B0A-00A8-31612CE3D104"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

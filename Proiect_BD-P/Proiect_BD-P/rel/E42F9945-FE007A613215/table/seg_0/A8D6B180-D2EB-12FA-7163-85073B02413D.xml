@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8D6B180-D2EB-12FA-7163-85073B02413D" name="Contracte">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>1B268ED2-FB14-1625-D926-661D345612AC</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contract" id="634A85B9-A023-84E5-528A-DE9CC11744FC">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>0F1E9DDF-4EC6-525D-7C9E-13F9810978BC</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_start" id="2FE07B06-FFE1-4D73-37C2-565AE49EDB7D">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>C9CEE914-B687-9566-6539-60FB30D9A945</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_end" id="4FAB492D-814F-4921-B3BC-738EDC5E01CA">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>28FE907D-2AF5-25FF-E689-FEA2C98A6434</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>data_end_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_end&gt;data_start"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_luni" id="F01F439C-F007-2975-276B-D44F66CA161A">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>FED6A1A2-13BA-F056-6D3E-D7CB623FF4E5</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<constraintName>c_nr_luni_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_luni&gt;=12 and MOD(nr_luni, 6)=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cabinete_id_cabinet" id="A61C5312-D7E9-9B84-0EEA-4AEFB0687B2D">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>E10FA3E7-51F8-5018-957F-811DB0BAFDE8</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75AA22E9-AA28-1B01-0EC4-8E75800C6064" referredColumn="1F09BD9C-05EB-DE0A-52E2-6309B80B7625"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E87DBA5-B81B-6963-70E2-21F151BF115A" name="Contracte_PK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>554580C8-09B4-2B09-C2A3-4FDD34741D74</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="634A85B9-A023-84E5-528A-DE9CC11744FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86673864-96ED-5762-1383-D4C5A52740BD" name="Contracte_Cabinete_FK">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-27 11:56:06 UTC</createdTime>
+<generatorID>7672BDB3-1030-7DC3-FA42-E18E833914C0</generatorID>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A61C5312-D7E9-9B84-0EEA-4AEFB0687B2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

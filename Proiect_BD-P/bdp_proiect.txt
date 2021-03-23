@@ -1,0 +1,16 @@
+Tema proiectului: Baza de date pentru Centre ce recoltare de sange (pentru analize)
+
+Specificatii: 
+
+Centrele de recoltare au o denumire, o anumita adresa, un numar de telefon.
+Ele pun la dispozitie realizarea analizelor medicale pentru pacienti.
+Analizele medicale sunt de un anumit tip si au un pret, un rezultat, o data de recoltare si o data pentru rezultat + alte detalii referitoare la numele analizelor 
+corespunzatoare tipului respectiv de analiza si valorile minime si maxime ce vor reprezenta intervalul valorilor de referinta.
+
+Pacientii sunt persoane al caror nume trebuie stiut, impreuna cu CNP-ul, data nasterii, varsta, genul si adresa.
+
+In centrele de recoltare sunt asistente care se ocupa de pacienti si de recoltarea sangelui si laboranti care se ocupa cu 
+realizarea rezultatelor acelor analize medicale.
+
+Intre centrele de recoltare si asistente/laboranti se semneaza contracte de angajare care au 
+o data de stat, o data de final si un nr de luni.

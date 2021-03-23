@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pacienti_Detalii" directorySegmentName="seg_0" id="28298159-D4F5-B1B1-2729-5B3DFAB15873">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-05 09:30:29 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>este</nameOnSource>
+<nameOnTarget>are</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>BAA4AA3E-6A1B-3F1C-170A-62B9418881FA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A35DF239-1CAA-4F48-4F50-E3E1E17807DA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="rezultat" id="DB202CA9-865D-268D-AC2F-46238DCCE487">
+<createdBy>Ecaterina</createdBy>
+<createdTime>2020-12-06 19:40:26 UTC</createdTime>
+<ownerDesignName>Proiect_BD-P</ownerDesignName>
+<engineerTo>
+<item key="E42F9945-5450-4075-7CAE-FE007A613215" value="true"/>
+</engineerTo>
+<constraintName>rez_FK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="rezultat&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
